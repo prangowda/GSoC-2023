@@ -3,20 +3,82 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="A redesigned admin UI for Talawa by GSoC with an improved and modern interface." />
+  <meta name="keywords" content="GSoC, Talawa, Admin UI, Redesign, Open Source, Management" />
+  <meta name="author" content="Your Name or Organization Name" />
+  <meta name="theme-color" content="#000" />
+
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="GSoC Talawa Admin UI Redesign" />
+  <meta property="og:description" content="A modern and redesigned admin interface for Talawa by GSoC." />
+  <meta property="og:image" content="/social-preview.png" />
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon and Icons -->
   <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
   <link rel="manifest" href="/manifest.json" />
-  <meta name="theme-color" content="#000" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Additional Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha384-oSr19SXlHhoK6LOuCZzq3XgPfG60XcoUYndy5JpOfy94tu4+v6xYvYlUayY7DNOY" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/global.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Title -->
   <title>GSoC Talawa Admin UI Redesign</title>
 </head>
 
 <body>
-  <div id="root"></div>
+  <!-- Header with Navigation -->
+  <header>
+    <nav>
+      <a href="/" aria-label="Home">
+        <img src="/logo.svg" alt="Talawa Logo" width="100" height="auto" />
+      </a>
+      <ul>
+        <li><a href="/features">Features</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/login" class="button">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div id="root"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Talawa Admin UI. All Rights Reserved.</p>
+    <ul>
+      <li><a href="/privacy-policy">Privacy Policy</a></li>
+      <li><a href="/terms">Terms of Service</a></li>
+    </ul>
+  </footer>
+
+  <!-- JavaScript -->
   <script type="module" src="/src/main.tsx"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.5.0/lazyload.min.js" integrity="sha384-+kfFshZtZ9eGFLZwBTKhYvQDGrfjAjdBkXpB4ALqJJZKhvQHO9emfBeVjlUowZ8E" crossorigin="anonymous"></script>
+
+  <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'GA_TRACKING_ID');
+  </script>
 </body>
 
 </html>
